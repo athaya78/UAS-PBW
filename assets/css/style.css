@@ -391,7 +391,9 @@ h6 {
   line-height: 24px;
 }
 
+
 .book-search {
+    
   background-size: cover;
   background-position: center;
   padding: 175px 0;
@@ -399,79 +401,90 @@ h6 {
 }
 
 input[type="search"] {
+
   width: 50%;
   padding: 1%;
   font-size: 1rem;
   border-radius: 5px;
 }
 
-.searched-book {
+.searched-book{
   min-height: 100vh;
+
 }
-.searched-book .title h2 {
+.searched-book .title h2{
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 10px;
 }
 
-#bookdetails {
+#bookdetails{
   min-height: 100vh;
+  
 }
-.bookall {
+.bookall{
   position: relative;
   width: 100%;
   padding: 60px 0px;
+  
 }
-.bookall .title {
+.bookall .title{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.box {
+.box{
   position: relative;
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns:  auto;
   grid-template-rows: auto;
   grid-template-areas: "cover detail";
   grid-gap: 10px;
+  
+  
 }
-.book {
+.book{
   padding: 40px;
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
 }
-.cover {
-  grid-area: cover;
+.cover{
+  grid-area:cover;
 }
 
-.detail {
-  grid-area: detail;
+.detail{
+  grid-area:detail;
 }
 
-.btn-primary {
+.btn-primary{
   float: right;
 }
 
-@media (max-width: 991px) {
-  .bookall {
-    padding: 20px;
-  }
-  .box {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "cover"
-      "detail";
-  }
-  .cover {
-    display: flex;
-    justify-content: center;
-  }
+@media (max-width: 991px)
+{
+    .bookall{
+        padding: 20px;
+    }
+    .box{
+        position: relative;
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "cover"
+        "detail";
+        
+    }
+    .cover{
+      display: flex;
+      justify-content: center;
+    }
+    
+    
 }
 
-.peminjaman {
+
+.peminjaman{
   min-height: 100vh;
 }
 #footer {
